@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Яна, я тебя люблю!</title>
+    <style>
+        /* Общий стиль страницы */
+        body {
+            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Красивая градиентная заливка */
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Стиль заголовка */
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Тень для текста */
+            margin: 20px 0;
+            animation: bounce 2s infinite; /* Анимация подпрыгивания */
+        }
+
+        /* Анимация для заголовка */
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Сердечки */
+        .hearts {
+            font-size: 3em;
+            text-align: center;
+            animation: heartbeat 1.5s infinite; /* Пульсация сердечек */
+        }
+
+        /* Анимация пульсации */
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        /* Подпись внизу */
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 1.5em;
+            text-align: center;
+            width: 100%;
+            animation: fadeIn 3s ease-out; /* Эффект появления */
+        }
+
+        /* Анимация появления */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Стиль для кнопки */
+        .button {
+            background-color: #ff5c8d;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: white;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-top: 40px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #ff3b6f;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>Яна, я тебя люблю! 💖</h1>
+        <div class="hearts">
+            💖 💖 💖 💖 💖 💖 💖 💖 💖 💖<br>
+            💖 💖 💖 💖 💖 💖 💖 💖 💖 💖<br>
+            💖 💖 💖 💖 💖 💖 💖 💖 💖 💖<br>
+        </div>
+        <p class="footer">Ты — мое счастье, моя любовь! 💕</p>
+        <button class="button" onclick="alert('Ты моя любовь навсегда! 💖')">Получить сюрприз!</button>
+    </div>
+
+</body>
+</html>
